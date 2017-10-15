@@ -63,15 +63,26 @@ img.past-member {
   }
 
 .gallery_image {
-  padding: 1%;
-  margin: 1%;
-  box-shadow: 10px
+  padding: 10px;
+  /* margin: 5px; */
 }
 
-/* .gallery {
-  box-shadow: 10px 10px
-} */
+div.gallery {
+  box-shadow: 10px 10px 5px #aaaaaa;
+  float: left;
+  margin: 10px
+  /* padding: 10px  */
+}
 
+#horz {
+  width: 320px;
+  height: 200px;
+}
+
+#vert {
+  width: 200px;
+  height: 320px;
+}
 /* html { 
     background: url(images/background.jpg) no-repeat center center fixed; 
     background-size: cover;

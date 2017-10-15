@@ -68,11 +68,7 @@ img.past-member {
   box-shadow: 10px
 }
 
-/* .gallery {
-  box-shadow: 10px 10px
-} */
-
-/* html { 
+body { 
     background: url(images/background.jpg) no-repeat center center fixed; 
     background-size: cover;
     -webkit-background-size: cover;
@@ -80,4 +76,6 @@ img.past-member {
     -o-background-size: cover;
 }
 
-.white {color: white; text-shadow: black 0.1em 0.1em 0.2em} */
+/*h1, h2, h3, h4, p, li {color: white; text-shadow: black 0.1em 0.1em 0.2em} */
+
+.white {color: white; text-shadow: black 0.1em 0.1em 0.2em}

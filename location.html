@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IISc Archery Club</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    @media (max-width: 900px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,.navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+        float: none;
+      }
+      .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in{
+        display:block !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./index.html">
+          <img src="images/icon.png" alt="Logo" width="25" height="25">
+        </a>
+        <a class="navbar-brand" href="./index.html">IISc Falcons</a>
+        <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="./members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
+          <li><a href="./rules.html"><span class=" glyphicon glyphicon-list-alt"></span> Rules</a></li>
+          <li><a href="./resources.html"><span class=" glyphicon glyphicon-education"></span> Resources</a></li>
+          <li><a href="./registration.html"><span class=" glyphicon glyphicon-registration-mark"></span> Registration</a></li>
+          <li class="active"><a href="./location.html"><span class="glyphicon glyphicon-map-marker"></span> Location</a></li>
+          <li><a href="mailto:iiscfalcons@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Mail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="col-md-8 col-md-offset-2">
+    <h1>Location</h1>
+    Our archery range is located behind the tennis court at Indian Institute of Science Gymkhana
+    <div id="map" style="width:100%;height:500px;"></div>
+  </div>
+  <script>
+    function initMap() {
+      var archery_shed = {lat: 13.016300, lng: 77.561059};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: archery_shed
+      });
+      var marker = new google.maps.Marker({
+        position: archery_shed,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+  </script>
+</body>
+</html>

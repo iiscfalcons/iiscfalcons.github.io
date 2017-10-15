@@ -60,6 +60,8 @@ img.past-member {
     .responsive_font_size {
       font-size: 20px
     }
+    p {font-size: 18px}
+    .larger-font {font-size: 18px}
   }
 
 .gallery_image {
@@ -79,3 +81,5 @@ body {
 /*h1, h2, h3, h4, p, li {color: white; text-shadow: black 0.1em 0.1em 0.2em} */
 
 .white {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+

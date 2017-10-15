@@ -35,19 +35,43 @@
     }
   }
 
-img.office-bearer {
+img.instructor {
   width: 200px;
   height:200px;
   line-height: 200px;
   text-align: center;
 }
 
-img.member {
+img.present-member {
   width: 150px;
   height:150px;
   line-height: 150px;
   text-align: center;
 }
+
+img.past-member {
+  width: 100px;
+  height:100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+@media all and (min-width: 500px) { /* screen size until 500px */
+    .responsive_font_size {
+      font-size: 20px
+    }
+  }
+
+.gallery_image {
+  padding: 1%;
+  margin: 1%;
+  box-shadow: 10px
+}
+
+/* .gallery {
+  box-shadow: 10px 10px
+} */
+
 /* html { 
     background: url(images/background.jpg) no-repeat center center fixed; 
     background-size: cover;
